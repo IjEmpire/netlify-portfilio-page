@@ -49,10 +49,9 @@ welcomeMsg.addEventListener("click", function(){
 });
 */
 
-//goTo resume.io || i decided to use this link instead of 
 //a the local pdf file in /root/docs folder. but I#ll leave the file there
 const cvBtn = document.getElementById("btn2");
-cvBtn.addEventListener("click", function(){    window.open("https://resume.io/r/2PLVNcPxy");
+cvBtn.addEventListener("click", function(){
     window.open("docs/resume-file.pdf",  "_blank")
 });
 
