@@ -52,7 +52,7 @@ welcomeMsg.addEventListener("click", function(){
 //a the local pdf file in /root/docs folder. but I#ll leave the file there
 const cvBtn = document.getElementById("btn2");
 cvBtn.addEventListener("click", function(){
-    window.open("docs/resume-file.pdf",  "_blank")
+    window.open("docs/resume.pdf",  "_blank")
 });
 
 //go to URL- contact.index in root folder
