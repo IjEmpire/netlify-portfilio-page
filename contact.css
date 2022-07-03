@@ -1,0 +1,117 @@
+
+
+.contact-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact-info > *:not(h4) {
+    padding: 10px 0;
+}
+
+.contact-info{
+    max-width: 50%;
+}
+
+.contact-form{
+    max-width: 50%;
+}
+
+.contact-info h4{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.contact-info h4 img{
+    margin-right: 15px;
+    transition: transform 0.5s ease;
+}
+
+.contact-info h4:hover img{
+    transform: scale(1.1);
+}
+
+.contact-info h4:hover p a:not(i){
+    transform: scale3d();
+}
+
+
+.contact-info p, h4 a{
+    font-size: 20px;
+}
+
+.contact-info i{
+    color: #000;
+}
+
+.names{
+    display: flex;
+}
+
+.firstandl{
+    min-width: 50%;
+}
+
+.names>div:nth-child(2){
+    padding-left: 10px;
+}
+
+label{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    word-spacing: 1.2px;
+}
+
+input[type="text"],#email,textarea{
+    min-width: 60%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #101010;
+    outline: none;
+    padding: 15px;
+    writing-mode: horizontal-tb !important;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+.eachname{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.msg{
+    margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contact-main{
+        flex-direction: column;
+    }
+
+    .contact-info p, h4 a{
+        font-size: 18px;
+    }
+
+
+    .contact-info{
+        max-width: 100%;
+        padding-bottom: 30px;
+        border-bottom: 1px dotted grey;
+    }
+
+    .contact-form{
+        margin-top: 25px;
+        max-width: 90%;
+        padding-bottom: 40px;
+        border-bottom: 1px dotted grey;
+    }
+
+}

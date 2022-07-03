@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/tab-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="contact.css">-->
+    <title>marvis-ijenwa</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">Marvis Buchi Ijenwa <span>.</span></a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" id="home-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#grid-wrap" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link nav-link-chat">Chat <i class="fa fa-arrow-right" style="margin: 0 20px;"></i></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <div class="intro-left">
+            <h1>
+                Hello <span style="text-decoration: line-through;color: grey">world</span> there! <br> I'm a front end web and mobile developer
+            </h1>
+            <p>
+                I use html, css and javascript to build responsive and interactive websites. I keep it simple and functional.
+            </p>
+            <button onclick="toContactPage()" class="btn1"><span id="btn1">Contact me</span></button>
+            <button class="btn2" id="btn2">Download CV <i class="fa fa-arrow-right" style="margin: 0 20px;"></i></button>
+        </div>
+
+        <div class="intro-img">
+            <img src="img/intro-img-index.png" alt="officialLogo">
+        </div>
+    </div>
+
+
+    <div class="skillset">
+        <div class="skill-icons">
+            <img src="img/skill-icons/html-file.png" alt="html" class="odd">
+            <img src="img/skill-icons/css-file-format.png" alt="css" class="even">
+            <img src="img/skill-icons/javascript.png" alt="js" class="odd">
+            <img src="img/skill-icons/atom.png" alt="react" class="even">
+            <img src="img/skill-icons/nodejs.png" alt="node" class="odd">
+            <img src="img/skill-icons/responsive-design.png" alt="responsive" class="even">
+            <img src="img/skill-icons/sass.png" alt="sass" class="odd">
+            <img src="img/skill-icons/git.png" alt="git" class="even">
+            <img src="img/skill-icons/terminal.png" alt="terminal" class="odd">
+        </div>
+
+        <div class="skillset-right">
+            <h2 class=" reveal focus-in-contract-bck">responsive web design</h2>
+            <p>
+                From a mobile device, you will see a grid of icons beneath this long and interesting (coughs, boring) paragraph and on a bigger device, the icons will be on the left hand side. This is the beauty of responsive web development. Tools such as html, css, javascript, sass, react and react native, when used efficiently can give users seamless, easy and fun experience on the web. Feel free to play with animations all over this website. <span id="welcome-msg" onmouseover="translateMsg(this)" onmouseout="unTranslateMsg(this)">herzlich willkommen!</span> <i class="fa fa-heart" style="color: #101010;"></i>
+            </p>
+        </div>
+    </div>
+
+    <a name="grid-wrap"></a>
+    <h2 class="project-header">
+        my coding journey so far illustrated with some projects. <i class="fa fa-arrow-right" style="margin: 0 20px;"></i>
+    </h2>
+
+
+    <div class="song">
+        <i class="fa fa-play"></i>
+        <audio controls src="audio/Metro - Yung Logos.mp3"></audio>
+    </div>
+
+    <div class="grid-wrap">
+        <a href="http://ijempire.github.io/colors">
+            <div class="project"  style="background: grey url('img/projects/colors.png') no-repeat center center / cover"></div>
+            <h2>random colors <img src="img/project-desc-icons/color-palette.png" alt=""></h2>
+        </a>
+        <a href="https://ijempire.github.io/tinyhomesng/">
+            <div class="project"  style="background: grey url('img/projects/mystic.png') no-repeat center center / cover"></div>
+            <h2>tiny house <img src="img/project-desc-icons/tiny-house.png" alt=""></h2>
+        </a>
+        <a href="#">
+            <div class="project"  style="background: grey url('img/projects/ptfweb1.png') no-repeat center center / cover"></div>
+            <h2>portfolio v-1 <img src="img/project-desc-icons/portfolio.png" alt=""></h2>
+        </a>
+        <a href="https://ijempire.github.io/rochambeau/">
+            <div class="project"  style="background: grey url('img/projects/rpsGame.png') no-repeat center center / cover"></div>
+            <h2 style="text-transform: lowercase !important;">r|p|s game <img src="img/project-desc-icons/rock-paper-scissors.png" alt=""></h2>
+        </a>
+        <a href="https://ijempire.github.io/petrescue/">
+            <div class="project"  style="background: grey url('img/projects/petshelter.png') no-repeat center center / cover"></div>
+            <h2>pet shelter <img src="img/project-desc-icons/dog.png" alt=""></h2>
+        </a>
+        <a href="https://ijempire.github.io/tinyhouse.blog/">
+            <div class="project"  style="background: grey url('img/projects/lbiath.jpg') no-repeat center center / cover"></div>
+            <h2>housing blog <img src="img/project-desc-icons/blog.png" alt=""></h2>
+        </a>
+    </div>
+    
+    <footer>
+        <div class="top-or-left">
+            <ul>
+                <li class="nav-logo">M.B Ijenwa</li>
+                <li>22049 - Hamburg - Germany</li>
+                <li>
+                    <h4>
+                        <p><a href="mailto:marvis-ijenwa@uni-jena.de" target="_blank">marvis.webdev@outlook.com</a></p>
+                    </h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottom-or-right">
+            <p>
+                2022 <span><i class="far fa-copyright"></i></span>, Ij_buchi Ltd. or its affiliates
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js" defer></script>
+</body>
+</html>
