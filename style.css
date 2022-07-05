@@ -108,6 +108,7 @@ li{
 .intro-left P{
     max-width: 75%;
     padding: 20px 0;
+    font-size: 20px;
 }
 
 button {
@@ -165,7 +166,7 @@ button {
 
 .project-header:hover i,.btn2:hover i,.contact-info p:hover i,.msg:hover i{
     display: inline-flex;
-    color: grey;
+    color: #486581;
     transform: rotate(90deg);
 }
 
@@ -180,8 +181,8 @@ button {
     margin-top: 70px;
     align-items: center;
     justify-content: space-between;
-    background: grey;
-    border-radius: 10px;
+    background: #486581;
+    border-radius: 0px;
     padding: 20px;
 }
 
@@ -288,7 +289,7 @@ button {
 
 
 .song{
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -354,30 +355,6 @@ footer{
     flex-direction: row;
     align-items: flex-end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -463,11 +440,6 @@ footer{
 }
 
 
-
-
-
-
-
 @media only screen and (max-width: 512px) {
     body{
         max-width: 95%;
@@ -525,6 +497,7 @@ footer{
 
     .skillset-right{
         margin-bottom: 40px;
+        padding: 0 20px;
     }
 
     .skillset-right h2{
@@ -540,5 +513,40 @@ footer{
     .grid-wrap{
         grid-template-columns: 1fr;
     }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    /* all your styles for dark mode here */
+
+    body{
+        background-color: #243b53;
+        color: #fff;
+    }
+
+    @media only screen and (max-width: 800px) {
+    
+        .nav-menu {
+            background-color: #243b53;
+            box-shadow: none;
+        }
+        
+    }
+
+    .btn1{
+        border: 1px solid #fff;
+    }
+
+    .btn1:before {
+        background-color: #486581;
+    }
+
+    .btn1:hover:before {
+        background-color: #486581;
+    }
+
+    .skillset-right h2, p{
+        color: #fff;
+    }    
 
 }
