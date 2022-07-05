@@ -115,3 +115,28 @@ input[type="text"],#email,textarea{
     }
 
 }
+
+@media (prefers-color-scheme: dark) {
+    /* all your styles for dark mode here */
+
+    .contact-info>.text{
+        color: #fff;
+    }
+
+    .contact-info i{
+        color: #486581;
+    }
+    
+    label{
+        color: #fff;
+    }
+
+    input[type="text"],#email,textarea{
+        font-weight: 400;
+    }
+
+    .contact-info h4 img{
+        background-color: #fff;
+        padding: 2.5px;
+    }
+}
